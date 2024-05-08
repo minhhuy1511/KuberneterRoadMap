@@ -47,8 +47,21 @@ https://kubernetes.io/releases/patch-releases/#support-period
 - minikube installation: https://minikube.sigs.k8s.io/docs/start/ 
 8. Imperative vs Declarative
 9. Pod - Imperative
+Pod một đơn vị triền khai dịch vụ, 1 pod có thể gồm 1 hoặc nhiều container
 10. Pod - Declarative
 11. NodePort Service
+Expose pod: nodeport, loadbalancer
+NodePort: 30.000 -32.762
+Vidu: 10.100.5.8:30198
+
+kubectl get pods: Lấy các pods
+kubectl describe pods app1: Mô tả pod
+kubectl get service: lấy các service
+Kubectl describe svc service1: Mô tả service
+kubectl expose pod app1 --port=8081 --target-port = 8080 --name:service1 --type=NodePort: phơi pod ra ngoài internet thông qua nodeport
+kubectl get nodes -o wide: xem thông tin của node với option wide
+kubectl logs app1 -f : xem log tren pod co 1 container hien tai
+kubectl logs app1 -c logs: xem logs trong pod co container logs
 12. Service Types
 13. Namespaces
 14. Lables & Selectors
