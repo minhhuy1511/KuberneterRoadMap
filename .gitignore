@@ -1,2 +1,3 @@
 # ignore ALL files in ANY directory named kubectl.*
-kubectl.*/
+kubectl.exe
+kubectl.exe.sha256
