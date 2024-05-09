@@ -62,7 +62,10 @@ kubectl expose pod app1 --port=8081 --target-port = 8080 --name:service1 --type=
 kubectl get nodes -o wide: xem thông tin của node với option wide
 kubectl logs app1 -f : xem log tren pod co 1 container hien tai
 kubectl logs app1 -c logs: xem logs trong pod co container logs
+kubectl exec -it app1 --ls: truy cập vào container list folder
+kubectl exec -it app1 --sh: ssh vào container
 12. Service Types
+
 13. Namespaces
 14. Lables & Selectors
 15. ReplicaSet
